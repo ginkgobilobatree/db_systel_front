@@ -5,7 +5,9 @@ import { handleChange } from "./utils/handleChange";
 import { submit } from "./utils/submit";
 
 export default function App() {
+  
   const [input, setInput] = useState({ station1: "", station2: "" });
+  const [result, setResult] = useState(false);
 
   return (
     <main className="App">
@@ -22,7 +24,7 @@ export default function App() {
             name="station1"
             value={input.station1}
             onChange={(e) => handleChange(e, input, setInput)}
-          />
+/>
           <input
             id="inputField"
             type="text"
@@ -30,15 +32,16 @@ export default function App() {
             name="station2"
             value={input.station2}
             onChange={(e) => handleChange(e, input, setInput)}
-          />
+/>
           <input
             id="send"
             type="submit"
             value="Berechne Distanz"
-            onClick={(e) => submit(e, input, setInput)}
+            onClick={(e) => submit(e, input, setInput, setResult)}
           />
         </form>
       </section>
+      {/* {result && <p>&#123;"from": "{result.from}", "to": "{result.to}", "distance": {result.distance}, "unit": "{result.unit}"&#125;</p>} */}
     </main>
   );
 }
