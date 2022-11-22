@@ -10,6 +10,10 @@
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: 2px -5px 15px gray;
   width: 50vw;
   background-color: white;
@@ -19,6 +23,7 @@ section {
   -ms-border-radius: 1vw;
   -o-border-radius: 1vw;
 }
+
 figure {
   display: flex;
   justify-content: center;
@@ -28,6 +33,23 @@ img {
   filter: drop-shadow(7px 5px 4px darkgray);
   width:50%;
   -webkit-filter: drop-shadow(7px 5px 4px darkgray);
+}
+
+article {
+  width: 50%;
+  padding-left: 25%;
+}
+
+#stepRight {
+  padding-left: 5%;
+}
+
+span {
+  color: green;
+}
+
+#red {
+  color: red;
 }
 
 #form {
