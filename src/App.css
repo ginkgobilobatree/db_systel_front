@@ -30,9 +30,7 @@ figure {
 }
 
 img {
-  filter: drop-shadow(7px 5px 4px darkgray);
   width:50%;
-  -webkit-filter: drop-shadow(7px 5px 4px darkgray);
 }
 
 article {
